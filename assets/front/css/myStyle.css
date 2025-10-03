@@ -1,0 +1,972 @@
+body{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    background-color:rgb(233 239 239);
+    font-size: 18px;
+}
+
+
+/* Top Header */
+/* --- Simple Top Bar Styles --- */
+.top-bar {
+  background: #ffffff; /* Plain white background */
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  color: #064267;
+}
+
+/* USP text */
+.top-offer h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #064267; /* Brand color text */
+}
+
+/* Contact links */
+.top-contact a {
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #064267; /* Brand color text */
+  text-decoration: none;
+}
+
+.top-contact a:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+
+/* WhatsApp button */
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 6px 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+  color: #fff !important;
+}
+
+/* Responsive Address Styles */
+.address-text {
+  display: none; /* hidden on mobile */
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Medium+ screens: show short address */
+@media (min-width: 768px) {
+  .address-text.short {
+    display: inline-block;
+  }
+}
+
+/* Extra-large screens: show full address */
+@media (min-width: 1200px) {
+  .address-text.short {
+    display: none;
+  }
+  .address-text.full {
+    display: inline-block;
+  }
+}
+
+
+
+/* Navigation Bar */
+.custom-navbar {
+    /* background: linear-gradient(135deg, #064267 0%, #1485cb 100%); */
+   background-color: #064267;
+  }
+
+/* Navbar links */
+  .custom-navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .custom-navbar .nav-link:hover {
+    color: #ffeb3b !important; /* Accent hover (Yellow) */
+  }
+
+  /* Dropdown menu */
+  .custom-navbar .dropdown-menu {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .custom-navbar .dropdown-item:hover {
+    background-color: #1485cb;
+    color: #fff !important;
+  }
+
+
+
+  /* CTA Button */
+  .custom-navbar .btn-primary {
+    background: linear-gradient(135deg, #f6b93b, #e58e26); 
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(229, 142, 38, 0.4);
+    position: relative;
+    overflow: hidden;
+    animation: glowPulse 2.5s infinite;
+    padding: 8px 18px;
+  }
+
+  .custom-navbar .btn-primary:hover {
+      background: linear-gradient(135deg, #e58e26, #f6b93b);
+      color: #064267;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      transform: translateY(-2px);
+  }
+
+  .custom-navbar .btn-primary i{
+    font-size: 1.2rem;
+    vertical-align: middle;
+  }
+
+  /* Offcanvas background */
+  .primaryBgClr {
+    background-color: #1485cb;
+  }
+
+  .primaryBgClr .nav-link {
+    color: #fff !important;
+  }
+
+  .primaryBgClr .dropdown-menu {
+    background: #fff;
+  }
+/*End  Navigation Bar */
+
+.primaryClr{
+    color: #064267;
+}
+
+.primaryBgClr{
+    background-color: #064267;
+}
+
+.secondaryClr{
+    color: #1485cb; 
+}
+
+
+/* Common Heading */
+.headings{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px 0px;
+}
+
+.headings p,.headings h1{
+    text-align: center;
+}
+
+.headings h1,.headings h2{
+    font-weight: 800;
+}
+/* End Common Heading */
+
+
+/* Start Home Page Services */
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 12px;
+    background: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+    
+  }
+
+  .service-card .icon {
+    font-size: 40px;
+    color: #1485cb; 
+  }
+
+  .service-card h5 {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #064267;
+    font-weight: 900;
+  }
+
+  .service-card p {
+    color: #555;
+    font-size: 15px;
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px);
+    background: #064267;
+    color: #fff;
+    border-color: #064267;
+    border: 4px inset #064267;
+  }
+
+  .service-card:hover .icon {
+    color: #fff;
+  }
+
+  .service-card:hover h5,
+  .service-card:hover p {
+    color: #fff;
+  }
+
+/* End  Home Page Services */
+
+
+/* Chatbot */
+ /* Wrapper to hold icon + tooltip */
+  .chatbot-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Tooltip Bubble */
+  .chatbot-tooltip {
+    background: #064267; /* Brand Dark Blue */
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+    position: relative;
+    margin-bottom: 6px;
+    animation: fadeInOut 6s infinite;
+  }
+
+  /* Tooltip Arrow */
+  .chatbot-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 20px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #064267 transparent transparent transparent;
+  }
+
+  /* Chatbot Floating Icon */
+  .chatbot-icon {
+    display: inline-block;
+    background: #1485cb; /* Brand Blue */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    animation: pulse 2.5s infinite;
+  }
+
+  .chatbot-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+  }
+
+  /* Hover Effect */
+  .chatbot-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+    background: #064267;
+    animation: none; /* stop pulse when hovering */
+  }
+
+  /* Pulse Animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(20,133,203, 0.6);
+    }
+    70% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 15px rgba(20,133,203, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(20,133,203, 0);
+    }
+  }
+
+  /* Tooltip Fade Animation */
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; transform: translateY(10px); }
+    10%, 40% { opacity: 1; transform: translateY(0); }
+    60%, 90% { opacity: 0; transform: translateY(10px); }
+  }
+
+  /* End Chat Bot */
+
+
+
+
+  /* Why Choose Us */
+
+  .why-us {
+    background: linear-gradient(135deg, #064267 0%, #1485cb 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Decorative Glow */
+  .why-us::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+  }
+
+  /* Card Style */
+  .why-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px 20px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+     box-shadow: 0 8px 10px rgba(0,0,0,0.3);
+  }
+
+  .why-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .why-card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .why-card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .why-card p {
+    font-size: 14px;
+    color: #e0e0e0;
+  }
+
+
+  /* CTA Banner */
+   /* CTA Section */
+  .cta {
+    background: linear-gradient(135deg, #064267 0%, #1485cb 100%);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  /* Consultation Button (Gold Premium) */
+  .btn-consultation {
+    background: linear-gradient(135deg, #f6b93b, #e58e26); /* Gold/Orange */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(229, 142, 38, 0.4);
+    position: relative;
+    overflow: hidden;
+    animation: glowPulse 2.5s infinite;
+  }
+
+  .btn-consultation:hover {
+    background: linear-gradient(135deg, #e58e26, #f6b93b);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .btn-consultation i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+  }
+
+  /* WhatsApp Button */
+  .btn-whatsapp {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    animation: zoomPulse 2s ease-in-out infinite;
+  }
+
+  .btn-whatsapp:hover {
+    background-color: #1ebc57;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .btn-whatsapp i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+  }
+
+  /* Zoom In & Out for WhatsApp */
+  @keyframes zoomPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+
+  /* Glowing Pulse for Consultation */
+  @keyframes glowPulse {
+    0% { box-shadow: 0 0 0 0 rgba(229, 142, 38, 0.6); }
+    50% { box-shadow: 0 0 20px 8px rgba(229, 142, 38, 0.4); }
+    100% { box-shadow: 0 0 0 0 rgba(229, 142, 38, 0.6); }
+  }
+
+    
+
+
+/* Footer */
+ .footer {
+  border-top: 5px solid #25D366; 
+    background: #064267; /* Primary Dark Blue */
+  }
+
+  .footer h5 {
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .footer p {
+    color: #dcdcdc;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #dcdcdc;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: #1485cb;
+  }
+
+  .contact-link {
+    text-decoration: none;
+    color: #dcdcdc;
+    transition: color 0.3s ease;
+  }
+
+  .contact-link:hover {
+    color: #1485cb;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 16px;
+    color: #fff;
+    background: #1485cb;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .social-icons a:hover {
+    background: #fff;
+    color: #064267;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .footer .col-md-4,
+    .footer .col-md-2,
+    .footer .col-md-3 {
+      text-align: center;
+    }
+    .social-icons {
+      justify-content: center;
+    }
+  }
+
+
+  /* Review */
+  .reviews {
+  background: #f9fbfd;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  /* box-shadow: 0 8px 10px rgba(0,0,0,0.3); */
+  border-left:2px solid #064267 ;
+  border-right:2px solid #064267 ;
+  min-height: 360px; /* ensures equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* FIX: Override Owl's default img stretch */
+.review-card .review-img {
+  width: clamp(70px, 8vw, 100px) !important;
+  height: clamp(70px, 8vw, 100px) !important;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #1485cb;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  margin: 0 auto;
+}
+
+.stars i {
+  font-size: 1.2rem;
+  margin: 0 2px;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 12px;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Owl dots styling */
+.owl-theme .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background: #ccc;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #1485cb;
+  transform: scale(1.2);
+}
+
+/* Hide dots on mobile */
+@media (max-width: 576px) {
+  .owl-theme .owl-dots {
+    display: none !important;
+  }
+}
+
+
+
+/* About Page */
+  .hero-about {
+  position: relative;
+  background: linear-gradient(rgba(6, 66, 103, 0.85), rgba(6, 66, 103, 0.85)),
+              url('../images/digital-marketing-office-hyderabad.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+  border-bottom: 5px solid #25D366; /* Subtle brand accent */
+  overflow: hidden;
+}
+
+/* Decorative overlay shapes (nurturing look) */
+.hero-about::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: url("assets/images/wave-white.svg") no-repeat center bottom;
+  background-size: cover;
+  z-index: 1;
+}
+
+/* Typography */
+.hero-about h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  animation: fadeInDown 1s ease forwards;
+}
+
+.hero-about p {
+  font-size: 1.2rem;
+  max-width: 720px;
+  margin: auto;
+  line-height: 1.6;
+  opacity: 0.95;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+/* Button CTA */
+.hero-about .btn-cta {
+  margin-top: 25px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  background: #25D366;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.hero-about .btn-cta:hover {
+  background: #1ebe5d;
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-about {
+    padding: 80px 15px;
+  }
+  .hero-about h1 {
+    font-size: 2rem;
+  }
+  .hero-about p {
+    font-size: 1rem;
+  }
+}
+
+     .about-section {
+      padding: 70px 0;
+    }
+    .about-section img {
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    .about-content h2 {
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #064267;
+    }
+    .about-content p {
+      margin-bottom: 15px;
+      color: #555;
+      font-size: 1rem;
+    }
+
+
+
+
+
+    /* Contact */
+    /* Contact Links */
+  .contact-info-card .contact-link {
+    text-decoration: none;   /* remove underline */
+    color: #333;             /* match paragraph text */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    
+  }
+
+  .contact-info-card .contact-link:hover {
+    color: #064267;          /* your primary color */
+    text-decoration: none;   /* still no underline */
+    padding-left: 3px;       /* smooth slide effect */
+  }
+
+
+    .contact-section .form-control {
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    .contact-section .form-control:focus {
+      border-color: #064267;
+      box-shadow: 0 0 0 0.2rem rgba(6,66,103,0.2);
+    }
+    .contact-section form {
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+   
+
+    /* Contact Info */
+    .contact-info-card {
+      background: #f9fbfd;
+      padding: 25px;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+    .contact-info-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.07); }
+    .contact-info-card p, .contact-info-card a {
+      font-size: 1rem;
+      margin-bottom: 12px;
+      color: #333;
+    }
+    .contact-info-card i {
+      color: #064267;
+      margin-right: 8px;
+    }
+
+    /* Map */
+    .map-box {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+
+.faq-section {
+  background: #f9f9f9;
+}
+
+.custom-accordion .accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-accordion .accordion-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.custom-accordion .accordion-button {
+  background: var(--bs-white);
+  color: #333;
+  font-weight: 500;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background: var(--primaryBgClr); /* Your business primary background color */
+  color: #064267;
+  font-weight: 600;
+}
+
+.custom-accordion .accordion-body {
+  padding: 20px;
+  background: #fff;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.custom-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+/* ✅ Keep question visible always */
+.accordion-button::after {
+  transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+
+/* ✅ Social Follow Section */
+.social-follow-section {
+background: linear-gradient(135deg, #064267 0%, #1485cb 100%);
+  color: #fff;
+  box-shadow: 0 -3px 15px rgba(0,0,0,0.15);
+}
+
+.social-follow-section h2 {
+  font-size: 2rem;
+  color: #fff;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.social-follow-section p {
+  font-size: 1rem;
+  opacity: 0.9;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ✅ Social Icon Style */
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 0.4s ease;
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+/* Brand Hover Effects */
+.social-icon.facebook:hover { background: #1877f2; transform: scale(1.2) rotate(-5deg); }
+.social-icon.instagram:hover { background: #e1306c; transform: scale(1.2) rotate(5deg); }
+.social-icon.whatsapp:hover { background: #25d366; transform: scale(1.2) rotate(-5deg); }
+.social-icon.linkedin:hover { background: #0a66c2; transform: scale(1.2) rotate(5deg); }
+
+/* Glow Hover Effect */
+.social-icon:hover {
+  box-shadow: 0 8px 20px rgba(255,255,255,0.4);
+}
+
+/* ✅ Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ✅ Mobile Friendly Adjustments */
+@media (max-width: 576px) {
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    margin: 2px;
+  }
+  .social-follow-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Services Web Pages */
+.website-solutions h2 {
+  color: #064267;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Card Styles */
+.solution-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+.solution-card i.solution-icon {
+  font-size: 3rem;
+  color: #064267;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+.solution-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: color 0.4s ease;
+  color: #064267;
+}
+.solution-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  transition: color 0.4s ease;
+}
+
+/* Hover Animation */
+.solution-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.solution-card:hover i.solution-icon {
+  transform: rotate(15deg) scale(1.2);
+  color: #25D366;
+}
+.solution-card:hover h5 {
+  color: #25D366;
+}
+.solution-card:hover p {
+  color: #064267;
+}
+
+/* FadeIn Animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .solution-card { padding: 25px 15px; }
+  .solution-card i.solution-icon { font-size:2.5rem; }
+  .website-solutions h2 { font-size:2rem; }
+}
+
+

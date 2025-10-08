@@ -65,3 +65,6 @@ $route['ecommerce-application-development'] = 'ServicesController/ecommerce_webs
 $route['video-production'] = 'ServicesController/video_production';
 $route['software-development'] = 'ServicesController/software_development';
 $route['ananya-hi-solutions-package'] = 'PackagesController/our_packages';
+$route['package-details/(:any)'] = 'PackagesController/package_details';
+$route['validate-package'] = 'PackagesController/validate_package';
+$route['thank-you'] = 'PackagesController/thank_you';

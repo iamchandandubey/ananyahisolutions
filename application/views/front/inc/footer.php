@@ -6,7 +6,7 @@
       <!-- Logo & About -->
       <div class="col-md-4">
         <a href="<?= base_url() ?>" class="d-inline-block mb-3">
-          <img src="assets/front/images/ahs-logo.png" alt="AHS Logo" style="max-height: 60px;">
+          <img src="<?= base_url('assets/front/images/ahs-logo.png') ?>" alt="AHS Logo" style="max-height: 60px;">
         </a>
         <p>
           We are a professional Web Design & Digital Marketing agency in Hyderabad, 
@@ -89,7 +89,7 @@
      target="_blank" 
      class="chatbot-icon" 
      aria-label="Chat with Ananya Hi Solutions">
-    <img src="assets/front/images/ananya.png" alt="Ananya Girl Chatbot">
+    <img src="<?= base_url('assets/front/images/ananya.png') ?>" alt="Ananya Girl Chatbot">
   </a>
 </div>
 <!-- End WhatsApp Chatbot Floating Icon -->
@@ -98,9 +98,9 @@
 
 
 
+<script src="<?= base_url('assets/front/js/bootstrap.bundle.min.js') ?>"></script>
+<script src="<?= base_url('assets/front/js/myInteractivity.js') ?>"></script>
 
-<script src="assets/front/js/myInteractivity.js"></script>
-<script src="assets/front/js/bootstrap.bundle.min.js"></script>
 
 <!-- jQuery + Owl Carousel JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

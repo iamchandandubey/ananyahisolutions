@@ -5,8 +5,8 @@
     <p>Your trusted partner in Website Design & Digital Marketing. 
        We help businesses grow online with creativity, innovation, and measurable results.</p>
     
-    <a href="#contact" class="btn btn-cta">
-      <i class="bi bi-rocket-takeoff me-2"></i> Start Your Growth Journey
+    <a href="https://wa.me/917673935353" class="btn btn-cta">
+        <i class="bi bi-whatsapp me-2"></i> Get FREE Consultation
     </a>
   </div>
 </section>

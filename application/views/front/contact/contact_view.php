@@ -4,8 +4,8 @@
   <div class="container position-relative z-2">
     <h1>Contact Us</h1>
     <p>We’re here to help! Whether you need a new website, marketing strategy, or support — our Hyderabad team is just a click away.</p>
-    <a href="#contact" class="btn btn-cta">
-      <i class="bi bi-rocket-takeoff me-2"></i> Get FREE Consultation
+    <a href="https://wa.me/917673935353" class="btn btn-cta">
+       <i class="bi bi-whatsapp me-2"></i> Get FREE Consultation
     </a>
   </div>
 </section>

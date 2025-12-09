@@ -143,3 +143,8 @@ $route['show-quotation-informations/(:any)'] = 'QuotationController/Show_Quotati
 $route['delete-quotations/(:any)'] = 'QuotationController/Delete_Quotations';
 
 
+/*
+| -------------------------------------------------------------------------
+| Blogs
+| -------------------------------------------------------------------------
+*/

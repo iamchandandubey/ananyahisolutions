@@ -970,4 +970,211 @@ background: linear-gradient(135deg, #064267 0%, #1485cb 100%);
 }
 
 
+
+
 /* Package Page */
+ .packages-section {
+      /* padding: 5rem 0; */
+      background: #f8f9fa;
+      position: relative;
+    }
+
+    .package-card {
+      border-radius: 1rem;
+      overflow: hidden;
+      background: #fff;
+      transition: all 0.4s ease-in-out;
+      border: 1px solid rgba(0,0,0,0.05);
+      position: relative;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    /* Staggered effect for cards */
+    .package-card:nth-child(1) { animation-delay: 0.2s; }
+    .package-card:nth-child(2) { animation-delay: 0.4s; }
+    .package-card:nth-child(3) { animation-delay: 0.6s; }
+    .package-card:nth-child(4) { animation-delay: 0.8s; }
+    .package-card:nth-child(5) { animation-delay: 1s; }
+    .package-card:nth-child(6) { animation-delay: 1.2s; }
+    .package-card:nth-child(7) { animation-delay: 1.4s; }
+
+    /* Card hover shine */
+    .package-card::before {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: -45%;
+      width: 200%;
+      height: 200%;
+      background: rgba(255,255,255,0.15);
+      transform: rotate(25deg);
+      transition: 0.6s;
+    }
+    .package-card:hover::before {
+      top: 100%;
+      left: 100%;
+    }
+
+    /* Card hover lift */
+    .package-card:hover {
+      transform: translateY(-12px) scale(1.03);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+    }
+
+    /* Package header */
+    .package-header h5 {
+      font-weight: 600;
+    }
+
+    /* Feature list */
+    .package-body ul li {
+      margin-bottom: 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    /* Blurred features */
+    .feature-list .blurred {
+      filter: blur(2px);
+      opacity: 0.6;
+      transition: all 0.6s ease;
+      pointer-events: none;
+    }
+   
+    /* Gradient Button */
+    .btn-gradient {
+      /* background: linear-gradient(90deg, #0d6efd, #6610f2); */
+      background: linear-gradient(135deg, #064267 0%, #1485cb 100%);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 0.75rem 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-weight: 600;
+    }
+
+    /* Shine effect */
+    .btn-gradient::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75px;
+      width: 50px;
+      height: 100%;
+      background: rgba(255,255,255,0.4);
+      transform: skewX(-20deg);
+      transition: left 0.7s;
+    }
+    .btn-gradient:hover::after {
+      left: 120%;
+    }
+
+    /* Hover zoom */
+    .btn-gradient:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      color: #fff;
+    }
+
+    /* Pulse animation */
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(13,110,253,0.5); }
+      70% { box-shadow: 0 0 0 15px rgba(13,110,253,0); }
+      100% { box-shadow: 0 0 0 0 rgba(13,110,253,0); }
+    }
+    .btn-gradient {
+      animation: pulse 2s infinite;
+    }
+
+    /* Fade In Up Animation */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+
+
+
+
+    /* Services Full Details */
+    /* ===================== CTA Button ===================== */
+.btn-cta {
+  background-color: #ffb703;
+  color: #000;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 12px 30px;
+  transition: all 0.3s ease;
+}
+.btn-cta:hover {
+  background-color: #ffca3a;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* ===================== Gradient Button ===================== */
+.btn-gradient {
+  background: linear-gradient(135deg, #1485cb, #005f99);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #0072bb, #003459);
+}
+
+/* ===================== Package Card ===================== */
+.package-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.package-header {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* ===================== Utility ===================== */
+.blurred {
+  opacity: 0.6;
+}
+
+/* ===================== Why Choose Us Section ===================== */
+.why-section {
+  background: #f9fafc;
+  padding: 80px 0;
+}
+.why-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 30px;
+  transition: 0.3s;
+}
+.why-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* ===================== Final CTA Section ===================== */
+.cta-final {
+  background: linear-gradient(135deg, #003459, #0f6fbf);
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+

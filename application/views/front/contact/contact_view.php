@@ -53,7 +53,7 @@
               <h2 class="primaryClr">Our Office</h2>
             </div>
             
-            <p><i class="bi bi-geo-alt-fill"></i> Flat 501, 5th Floor, BDR Towers, Road No. 2, Methodist Colony, Hyderabad</p>
+            <p><i class="bi bi-geo-alt-fill"></i>   401 Sravya Vatika, Greenlands, Begumpet, Hyderabad, Telangana-500016</p>
             <p><i class="bi bi-telephone-fill"></i> 
               <a href="tel:+917673935353" class="contact-link">(+91) 76739-35353</a>
             </p>
@@ -66,7 +66,9 @@
           </div>
 
           <div class="map-box mt-4 ratio ratio-16x9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.930983969149!2d86.23350247530738!3d22.805021079326856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e3e25940f00f%3A0x51dbab7dc34af49f!2sBest%20Website%20Designe%20Company%20Jamshedpur%20-%20Brand%20Wave%20Studio!5e0!3m2!1sen!2sin!4v1758714731810!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6024941622372!2d78.45525757516587!3d17.43085398346383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9183fd7f0d1b%3A0x33152b32540e8bdc!2sAnanya%20Hi%20Solutions!5e0!3m2!1sen!2sin!4v1765180884703!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+             
           </div>
         </div>
 

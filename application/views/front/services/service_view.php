@@ -40,7 +40,7 @@
             <?php foreach($services as $service): ?>
                 <div class="col-md-4">
                     <article class="solution-card h-100" itemscope itemtype="https://schema.org/Service">
-                        <a href="<?= base_url($service['link']); ?>" itemprop="url" class="text-decoration-none text-dark">
+                        <a href="<?= base_url().$service['link'] ?>" itemprop="url" class="text-decoration-none text-dark">
                             <i class="bi <?= $service['icon']; ?> solution-icon" itemprop="image"></i>
                             <h5 itemprop="name"><?= $service['title']; ?></h5>
                             <p itemprop="description"><?= $service['description']; ?></p>

@@ -20,7 +20,7 @@
         <ul class="list-unstyled footer-links">
           <li><a href="<?= base_url() ?>">Home</a></li>
           <li><a href="<?= base_url('about') ?>">About Us</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="<?= base_url('careers') ?>">Careers</a></li>
           <li><a href="#">Payment Terms</a></li>
           <li><a href="#">News</a></li>
           <li><a href="<?= base_url('contact') ?>">Contact</a></li>
@@ -45,8 +45,8 @@
         <h5 class="mb-3">Contact Us</h5>
         <p>
           <i class="bi bi-geo-alt-fill me-2"></i> 
-          <a href="#" target="_blank" class="contact-link">
-            Flat 501, 5th Floor, BDR Towers, Road No. 2, Methodist Colony, Hyderabad, Telangana - 500016
+          <a href="https://maps.app.goo.gl/CAftcYrScrB2igQo6" target="_blank" class="contact-link">
+            401 Sravya Vatika, Greenlands, Begumpet, Hyderabad, Telangana-500016
           </a>
         </p>
         <p>

@@ -17,7 +17,7 @@
 
         <!-- Full Address (only on large desktop screens) -->
         <span class="address-text full">
-          <i class="bi bi-geo-alt-fill me-1"></i> Flat 501, 5th Floor, BDR Towers, Road No.2, Methodist Colony, Hyderabad, Telangana 500016
+          <i class="bi bi-geo-alt-fill me-1"></i> 401 Sravya Vatika, Greenlands, Begumpet, Hyderabad, Telangana-500016
         </span>
 
         <!-- WhatsApp CTA -->
